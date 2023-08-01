@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,200&family=Catamaran&family=Caudex&family=Courgette&family=Forum&family=Lato:wght@300&family=Libre+Baskerville:ital@1&family=Montserrat:wght@200&family=Poppins&family=Questrial&family=Roboto&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap');
+
+
+/*navbar*/
+
+.navbar{
+    padding: 2rem;
+    background-color: rgb(238, 230, 230);
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*estilos generales section se usa varias veces es el mas general y nos ahorramos rep*/
+/*medidas relativas permiten que se reajuste el cont*/
+     
+
+section{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;}
+
+
+h1{
+    font-size:2.5rem ;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.seccion-oscura{
+    color:white;
+    background-color:#9494b6;
+}
+
+.seccion-clara{
+    color:rgb(24, 23, 23);
+    background-color: white;
+}
+
+
+
+
+.seccion-titulo{
+font-size: 2rem;
+padding: 15px 0;
+font-family:  'Rubik Dirt', cursive;
+
+}
+
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color:grey ;
+}
+
+.seccion-texto{
+    font-size: 1.2rem;
+
+}
+
+.texto-negro{
+    color:black
+
+}
+
+.texto-blanco{
+color:white
+}
+
+
+
+/*seccion hero*/
+
+.hero{
+    background-color: #f5f6f7;
+    min-height:450px; /*le permitimos que se estire y se reajuste en el contenedor*/
+    text-align: center;
+}
+
+.hero-principal{
+    padding: 3rem;
+
+}
+
+.hero-imagen-desarrollador{
+width: 200px;
+height: 200px;
+border-radius: 50%;
+margin: 20px;
+
+}
+
+.hero-principal h2{
+    font-size:1.5rem;
+    color:grey;
+   
+}
+
+/*sobre mi*/
+
+
+.sobre-mi{
+    height: 500px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+
+
+/*experiencia*/
+
+.experiencia{
+    padding:40px 40px 60px 40px ;
+}
+
+.experiencia .columna{
+ padding: 20px;
+ border: 2px solid #9494b6;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+}
+
+.experiencia i{
+    font-size: 2.5rem;
+    color: #9494b6;
+    background-color:black ;
+    border-radius:50% ;
+    padding:8px 19px ;
+}
+
+.experiencia-titulo{
+    font-size: 25px;
+    font-weight:bold;
+    margin:10px 0 ;
+}
+
+.badges-contenedor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge{
+    margin:5px;
+}
+/*proyectos*/
+
+.proyectos-recientes{
+    padding: 40px;
+}
+
+.proyectos-recientes img{
+    height:100% ;
+    width: 100% ;
+    padding: 10px;
+    border-radius:10px ;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyectos-contenedor{
+    padding-top:60px ;
+    margin-bottom: 40px;
+}
+
+.overlay{
+    transition: all 0.2s ease ;
+    opacity:0;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+
+}
+
+.proyecto{
+    position: relative;
+}
+
+
+.proyecto:hover img{
+    opacity:0.2;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor{
+    display: flex;
+}
+
+.overlay i{
+    color:black;
+    font-size:60px ;
+    margin: 10px;
+
+}
+
+/*articulos*/
+
+.articulos{
+    min-height:500px ;
+    padding: 30px;
+}
+
+.articulos .card{
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.articulos  .card-header{
+    font-weight: bold;
+}
+
+
+/*testimonios*/
+
+.testimonios{
+padding: 40px 40px  80px 40px;
+
+}
+
+.testimonios .carousel{
+    min-width: 800px;
+
+}
+.carousel-item{
+    height: 500px;
+}
+.carousel-item .container{
+    height: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.testimonio-imagen{
+    height: 150px;
+    width: 150px;
+    margin:10px 10px 20px 10px ;
+}
+
+
+.testimonio-texto{
+   max-width: 70%;
+   font-size: 20px;
+   text-align: center;
+   font-family:  'Share Tech Mono', monospace;
+
+}
+
+.testimonio-info{
+    font-weight: bold;
+    text-align: center;
+}
+
+.testimonio-info p{
+    margin-bottom: 0;
+}
+
+.testimonio-footer .cliente{
+    font-size: 1.2rem;
+}
+
+
+.testimonio-info .cargo{
+  font-size: 0.9rem;
+  color: grey;
+}
+
+/*contacto*/
+
+.contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo{
+    margin-top: -5rem;
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px ;
+
+}
+
+.contacto .row{
+    width:100%;
+    display:flex;
+    align-items: center;
+}
+
+.contacto .descripcion{
+    color:white;
+    font-size: 1.2rem;
+
+
+}
+
+.contacto button{
+    color:white;
+    font-weight: bold;
+    background-color: transparent;
+    border:2px solid white;
+    padding:1.25em 2em;
+    margin:10px;
+    border-radius: 100px;
+    transition: all 0.2s easi-in-out;
+
+
+}
+
+
+.contacto button:hover{
+    background-color:white ;
+    color: black;
+}
+
+
+.contacto button i{
+    color:white;
+    font-size: 1.3rem;
+    transition: all 0.2s all ease-in-out;
+}
+
+.contacto button:hover i{
+
+    color:black;
+}
+
+
+
+
+/*adaptabe responsivo*/
+@media screen and (max-width:400px ){
+    .overlay p{
+        font-size:18px;
+     } 
+    
+    .overlay i{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:767px ){
+    .navbar-brand{
+        display: none} ;
+
+} 
+
+@media screen and (max-width:800px ){
+    .testimonio-imagen{
+        height:120px;
+        width: 120px;
+     } 
+    
+    .testimonio-texto{
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+/*hasta una cierta medida*/
+
+
+@media screen and (min-width:700px ){
+    .hero-inferior-imagen{
+        max-width:600px } ;
+
+}/*a partir de una cierta medida*/
+
+
+   
+
